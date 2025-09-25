@@ -1,4 +1,5 @@
 import { FlatCompat } from "@eslint/eslintrc";
+import { config as turboConfig } from "@repo/eslint-config/base";
 import pluginQuery from "@tanstack/eslint-plugin-query";
 import perfectionist from "eslint-plugin-perfectionist";
 import reactPlugin from "eslint-plugin-react";
@@ -15,6 +16,7 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  ...turboConfig,
   perfectionist.configs["recommended-alphabetical"],
   ...pluginQuery.configs["flat/recommended"],
   ...storybook.configs["flat/recommended"],
