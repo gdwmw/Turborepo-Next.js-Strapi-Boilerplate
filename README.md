@@ -1,135 +1,160 @@
-# Turborepo starter
+![Next.js - Home](public/project/1.png)
+![Next.js - Login](public/project/2.png)
+![Next.js - Register](public/project/3.png)
+![Strapi - Home](public/project/4.png)
+![Strapi - Login](public/project/5.png)
+![Strapi - Register](public/project/6.png)
 
-This Turborepo starter is maintained by the Turborepo core team.
+# Turborepo + Next.js + Strapi Boilerplate
 
-## Using this example
+Boilerplate By [Gede Dewo Wahyu M.W](https://github.com/gdwmw) ❤️
 
-Run the following command:
+## Boilerplate Description 📖
 
-```sh
-npx create-turbo@latest
-```
+This monorepo is a full‑stack boilerplate built with Turborepo, featuring a Next.js application and a Strapi CMS. It includes authentication, theme management, state management, form validation, and Storybook, and it follows Atomic Design principles for component organization.
 
-## What's inside?
+## Installation 🚀
 
-This Turborepo includes the following packages/apps:
+To get started, follow these steps:
 
-### Apps and Packages
+1. **Clone the repository**
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+   ```bash
+   git clone https://github.com/your-username/Turborepo-Next.js-Strapi-Boilerplate.git
+   cd Turborepo-Next.js-Strapi-Boilerplate
+   ```
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+2. **Install dependencies (root)**
 
-### Utilities
+   ```bash
+   pnpm install
+   ```
 
-This Turborepo has some additional tools already setup for you:
+3. **Set up environment variables**
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+   ```bash
+   cp apps/nextjs/.env.example apps/nextjs/.env.local
+   cp apps/strapi/.env.example apps/strapi/.env
+   ```
 
-### Build
+4. **Start development servers (via Turborepo)**
 
-To build all apps and packages, run the following command:
+   ```bash
+   pnpm dev
+   ```
 
-```
-cd my-turborepo
+5. **Access the applications**
+   - Next.js application: [http://localhost:3000](http://localhost:3000)
+   - Strapi Admin/API: [http://localhost:1337](http://localhost:1337)
 
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo build
+## Commit Guidelines 📝
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo build
-yarn dlx turbo build
-pnpm exec turbo build
-```
+When committing changes with `pnpm commit`, follow these steps:
 
-You can build a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
+1. **Prepare your changes**  
+   Ensure your code is tested and complies with the project's coding standards.
 
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo build --filter=docs
+2. **Stage your changes**  
+   Stage all relevant files:
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo build --filter=docs
-yarn exec turbo build --filter=docs
-pnpm exec turbo build --filter=docs
-```
+   ```bash
+   git add .
+   ```
 
-### Develop
+3. **Run the commit command**  
+   Execute:
 
-To develop all apps and packages, run the following command:
+   ```bash
+   pnpm commit
+   ```
 
-```
-cd my-turborepo
+4. **Follow the interactive prompt**  
+   Select the appropriate change type (e.g., feature, fix, docs) when prompted.
 
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo dev
+5. **Optionally provide a scope**  
+   If relevant, specify the scope (e.g., a specific module or feature).
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo dev
-yarn exec turbo dev
-pnpm exec turbo dev
-```
+6. **Write a concise subject**  
+   Use the imperative mood and keep it short and clear.
 
-You can develop a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
+7. **Optionally add a detailed body**  
+   Include motivation, context, and implementation details if helpful.
 
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo dev --filter=web
+8. **Document breaking changes (if any)**  
+   Clearly list any breaking changes in the designated section.
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo dev --filter=web
-yarn exec turbo dev --filter=web
-pnpm exec turbo dev --filter=web
-```
+9. **Confirm your commit**  
+   Review the message and confirm when prompted.
 
-### Remote Caching
+Following these guidelines ensures commit messages are informative and consistent with the project's standards.
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
+## Contribution 🤝
 
-Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+If you would like to contribute, follow these steps:
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
+1. **Fork the repository**  
+   Click the "Fork" button at the top right of the repository page.
 
-```
-cd my-turborepo
+2. **Clone your fork**  
+   Clone your forked repository to your local machine:
 
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo login
+   ```bash
+   git clone https://github.com/your-username/Turborepo-Next.js-Strapi-Boilerplate.git
+   cd Turborepo-Next.js-Strapi-Boilerplate
+   ```
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo login
-yarn exec turbo login
-pnpm exec turbo login
-```
+3. **Create a new branch**  
+   Create a branch for your feature or bug fix:
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+   ```bash
+   git checkout -b your-feature-branch
+   ```
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+4. **Make your changes**  
+   Implement your changes and ensure they follow the project's standards.
 
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo link
+5. **Commit your changes**  
+   Commit with a descriptive message:
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo link
-yarn exec turbo link
-pnpm exec turbo link
-```
+   ```bash
+   pnpm commit
+   ```
 
-## Useful Links
+6. **Push to your fork**  
+   Push your branch to your forked repository:
 
-Learn more about the power of Turborepo:
+   ```bash
+   git push origin your-feature-branch
+   ```
 
-- [Tasks](https://turborepo.com/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.com/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.com/docs/reference/configuration)
-- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+7. **Open a pull request**  
+   In the original repository, click "New Pull Request", select your branch, and submit with a clear description.
+
+Thank you for contributing!
+
+## MIT License ⚖️
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## How to Ask Questions ❓
+
+If you have questions about the boilerplate or how to use it, follow these guidelines:
+
+1. **Be clear and concise**  
+   Clearly state your question or issue and provide enough context.
+
+2. **Include relevant details**  
+   Share specific errors, code snippets, or configurations that are relevant.
+
+3. **Search before asking**  
+   Review the documentation and existing issues to avoid duplicates.
+
+4. **Use proper formatting**  
+   Use code blocks when sharing code or error messages for readability.
+
+5. **Be respectful**  
+   Be polite and respectful in all communication.
+
+Following these guidelines helps ensure your questions are understood and answered promptly.
+
+This documentation provides an overview of the boilerplate, installation steps, commit guidelines, and contribution process. If you have further questions, feel free to ask!
