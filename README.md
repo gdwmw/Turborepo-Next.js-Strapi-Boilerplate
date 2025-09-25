@@ -47,6 +47,17 @@ To get started, follow these steps:
    - Next.js application: [http://localhost:3000](http://localhost:3000)
    - Strapi Admin/API: [http://localhost:1337](http://localhost:1337)
 
+6. **API Access Settings**
+
+   #### `Authenticated`
+   - Data: `find`, `findOne`, `update`
+   - Media Library: `all`
+   - Users-permissions: `me`, `update`
+
+   #### `Public`
+   - Data: `find`, `findOne`, `create`
+   - Users-permissions: `findOne`, `update`
+
 ## Commit Guidelines 📝
 
 When committing changes with `pnpm commit`, follow these steps:
