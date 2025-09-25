@@ -20,8 +20,8 @@ To get started, follow these steps:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/Turborepo-Next.js-Strapi-Boilerplate.git
-   cd Turborepo-Next.js-Strapi-Boilerplate
+   git clone https://github.com/your-username/Fullstack-Boilerplate.git
+   cd Fullstack-Boilerplate
    ```
 
 2. **Install dependencies (root)**
@@ -99,8 +99,8 @@ If you would like to contribute, follow these steps:
    Clone your forked repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/Turborepo-Next.js-Strapi-Boilerplate.git
-   cd Turborepo-Next.js-Strapi-Boilerplate
+   git clone https://github.com/your-username/Fullstack-Boilerplate.git
+   cd Fullstack-Boilerplate
    ```
 
 3. **Create a new branch**  
