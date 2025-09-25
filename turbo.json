@@ -18,6 +18,9 @@
       "cache": false,
       "persistent": true
     },
+    "start": {
+      "dependsOn": ["^start"]
+    },
     "jest:test": {
       "dependsOn": ["^jest:test"]
     },
