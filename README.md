@@ -37,24 +37,27 @@ To get started, follow these steps:
    cp apps/strapi/.env.example apps/strapi/.env
    ```
 
-4. **Start development servers (via Turborepo)**
+4. **Start development (via Turborepo)**
 
    ```bash
    pnpm dev
    ```
 
 5. **Access the applications**
+
    - Next.js application: [http://localhost:3000](http://localhost:3000)
    - Strapi Admin/API: [http://localhost:1337](http://localhost:1337)
 
 6. **API Access Settings**
 
    #### `Authenticated`
+
    - Data: `find`, `findOne`, `update`
    - Media Library: `all`
    - Users-permissions: `me`, `update`
 
    #### `Public`
+
    - Data: `find`, `findOne`, `create`
    - Users-permissions: `findOne`, `update`
 
